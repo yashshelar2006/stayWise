@@ -107,7 +107,7 @@ app.use((req,res,next)=>{
 
 
 //all routes created in listing_router
-app.use("/",listing_router);
+app.use("/listings",listing_router);
 
 //all the review routes are created in review_router file and require here
 app.use("/listings/:id/review",reviews_router);
