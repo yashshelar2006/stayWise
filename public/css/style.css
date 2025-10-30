@@ -1,0 +1,132 @@
+body{
+  
+.plus-jakarta-sans-fonty {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+ }
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+/* navbar style */
+.navbar{
+    height: 5rem;
+    
+}
+.fa-hotel{
+    color: rgb(236, 95, 95);
+    font-size: 2rem;
+}
+.nav-link{
+    /* font-size: 5rem; */
+    color: black !important;
+}
+
+/* footer style */
+.foot-info{
+    height: 6rem;
+    background-color: #ededed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.foot-media , .foot-links , .foot-company{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.foot-media i{
+    font-size: 1.2rem;
+    margin-right: 0.50rem;
+}
+.foot-links a{
+    text-decoration: none;
+    margin-right: 0.50rem;
+    color: #222222;
+}
+.foot-links a:hover{
+    text-decoration: underline;
+}
+ /* card styling */
+
+ .card-listing{
+    border: none !important;
+    margin-bottom: 2rem;
+ }
+ .card-img-top{
+    border-radius: 1rem;
+ }
+ .card-body{
+    padding: 0 !important; 
+ }
+ .card-link{
+   margin-bottom: 20px;
+    text-decoration: none !important;
+ }
+ /* card-effect */
+ .card-img-overlay{
+    opacity: 0;
+ }
+ .card-img-overlay:hover{
+    opacity: 0.2;
+    background-color:black;
+ }
+
+ .add-btn{
+    background-color: rgb(143, 55, 55);
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    font-weight: 600;
+    width: 20vh;
+ }
+ .up-btn{
+  background-color: rgb(143, 55, 55);
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    font-weight: 600;  
+    width: 20vh;
+ }
+
+ /* show card */
+ .show-img{
+    height: 40vh;
+ }
+ .edit-btn{
+    background-color: rgb(143, 55, 55);
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    font-weight: 600; 
+    width: 20vh;
+ }
+ .del-btn{
+    background-color: rgb(143, 55, 55);
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    font-weight: 600; 
+    width: 20vh;
+ }
+ .show-card{
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px 1px black;
+    padding: 10px;
+ }
+ /* review card style */
+ .card-review{
+   border: 0.5px solid rgb(206, 193, 193);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+   padding-bottom:2px ;
+   }

@@ -1,0 +1,24 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<style>
+    .result_ele{
+        margin-top: 3rem;
+    }
+</style>
+<div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1 result_ele">
+        <% for(let data of results){%>
+            <a href="/listings/<%= data._id %>" class="card-link">
+            <div class="card col" >
+                    <img src="<%= data.image.url %>" class="card-img-top" alt="listing_image" style="height: 20rem" />
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b><%= data.title %></b>
+                            <br/>
+                            &#8377;<%= data.price.toLocaleString("en-IN") %> /Night
+                            <i class="taxInfo">&nbsp; +18% GST</i>
+                        </p>
+                    </div>    
+            </div>
+            </a>
+        <%}%>
+    </div>    

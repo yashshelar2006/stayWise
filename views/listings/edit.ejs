@@ -1,0 +1,59 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="row mt-4">
+    <div class="col-8 offset-2"> 
+    <h1 class="mb-3">Edit In Exsiting Data</h1>
+    <form action="/listings/<%= editdata._id %>?_method=PUT"  method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+         <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" value="<%= editdata.title %>" name="title" class="form-control" required>
+            <div class="valid-feedback">
+                Title looks good
+            </div>
+            <div class="invalid-feedback">
+                Add Title
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" cols="40" rows="5" class="form-control" required><%= editdata.description %></textarea>
+                    <div class="invalid-feedback">
+                        Add Description
+                    </div>
+        </div>
+        Original Image
+        <div class="mb-3">
+            <img src="<%=original_image%>" alt="og image">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload new Image</label>
+            <input type="file" name="image" class="form-control">
+        </div>
+        <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" name="price" class="form-control" required  value="<%= editdata.price %>">
+                    <div class="invalid-feedback">
+                        Add Price
+                    </div>
+                </div>      
+                <div class="mb-3 col-md-8">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" name="location" class="form-control" required value="<%= editdata.location %>"/>
+                    <div class="invalid-feedback">
+                        Add Location
+                    </div>
+                </div>
+        </div>      
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" name="country" class="form-control" required value="<%= editdata.country %>">
+                    <div class="invalid-feedback">
+                        Add country
+                    </div>
+        </div>
+        <br><br>
+        <button class="up-btn">Update</button>
+        <br><br>
+    </form>
+    </div>
+</div>
